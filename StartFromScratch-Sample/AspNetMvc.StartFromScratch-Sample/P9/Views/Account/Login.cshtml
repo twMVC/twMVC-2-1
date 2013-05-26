@@ -1,0 +1,30 @@
+﻿@model AspNetMvc.StartFromScratch.Models.LoginViewModel
+@using (Html.BeginForm("Login", "Account"))
+{
+    <h3>Account Information</h3>
+
+    <p>
+        <div class="editor-label">
+            @Html.LabelFor(m => m.UserName)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.UserName, new { @class = "inputBox" })
+            @Html.ValidationMessageFor(m => m.UserName)
+        </div>
+    </p>
+    
+    <p>
+        <div class="editor-label">
+            @Html.LabelFor(m => m.Password)
+        </div>
+        <div class="editor-field">
+            @Html.PasswordFor(m => m.Password, new { @class = "inputBox" })
+            @Html.ValidationMessageFor(m => m.Password)
+        </div>
+    </p>
+    <p><span>
+        @Html.CheckBoxFor(x=>x.RememberMe) Remember Me
+        <input type="submit" value="Login" class="inputButton" /> </p>
+    @Html.ValidationSummary()
+       
+}

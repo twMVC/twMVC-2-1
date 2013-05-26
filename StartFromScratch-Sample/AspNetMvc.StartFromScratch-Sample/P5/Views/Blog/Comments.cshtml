@@ -1,0 +1,16 @@
+﻿@model IEnumerable<AspNetMvc.StartFromScratch.Models.BlogComment>
+<div id="commentPanel">
+    <h3>回覆</h3>
+    @foreach (var item in this.Model)
+    {
+        <div>
+            <div>
+                Posted by @item.PostName on @item.CreateOn
+            </div>
+            <div>
+                @item.Comment
+            </div>
+        </div>
+    }
+    @Html.Partial("AddComment", new BlogComment() { BlogId = int.Parse(this.ViewContext.RouteData.Values["id"].ToString()) })
+</div>

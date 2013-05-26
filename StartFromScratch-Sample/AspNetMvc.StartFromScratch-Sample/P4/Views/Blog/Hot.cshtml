@@ -1,0 +1,19 @@
+﻿@model AspNetMvc.StartFromScratch.Models.Blog
+<div class="blogpost primary_wide2">
+    <img class="left" src="@Url.Content("~/Content/Images/hot.png")" width="250" height="250" alt="" />
+    <h2>@this.Model.Title</h2>
+    <h3>Posted on @this.Model.CreateOn by @this.Model.User.Name</h3>
+    <p>
+        @this.Model.Description
+    </p>
+    <p class="meta">
+        <span class="comments">
+            <a id="ajaxComment" href="@Url.Action("Comments", "Blog", new { Id = this.Model.Id })">
+            @this.Model.Comments.Count Comments</a>
+        </span> 
+        <span class="readmore">
+            <a href="@Url.Action("Article", "Blog", new { Id = this.Model.Id })"> View Post</a>
+        </span>
+    </p>
+    
+</div>

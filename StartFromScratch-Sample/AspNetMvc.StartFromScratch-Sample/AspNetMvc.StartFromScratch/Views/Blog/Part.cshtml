@@ -1,0 +1,16 @@
+﻿@model IEnumerable<AspNetMvc.StartFromScratch.Models.Blog>
+<div>
+    <h3>最新的Blog文章</h3>
+    <ul class="sectionList">
+        @foreach (var item in this.Model)
+        {
+            <li>
+                <img class="left" src="@(Url.Content(string.IsNullOrWhiteSpace(item.ImgPath) ? "~/Content/Images/Blog.png" : item.ImgPath))" width="90" height="90" alt="" />
+                <span>@Html.ActionLink(item.Title, "Article", "Blog", new { Id = item.Id }, null)</span>
+                <div>
+                    Posted On @item.CreateOn.ToString("yyyy-MM-dd")
+                </div>
+            </li>
+        }
+    </ul>
+</div>

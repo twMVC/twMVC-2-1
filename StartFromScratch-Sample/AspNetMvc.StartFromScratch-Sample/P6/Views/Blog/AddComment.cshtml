@@ -1,0 +1,17 @@
+﻿@model AspNetMvc.StartFromScratch.Models.BlogComment
+@*@using (Ajax.BeginForm("AddComment", new AjaxOptions() { UpdateTargetId = "commentPanel", InsertionMode = InsertionMode.Replace/*, OnComplete = "demo.addCommentComplated"*/ }))*@
+@using (Html.BeginForm("AddComment", "Blog"))
+{
+    @Html.HiddenFor(x => x.BlogId)
+    <h3>新增回覆</h3>
+    <div>
+        <ul>
+            <li>你的名稱: @Html.TextBoxFor(x => x.PostName) @Html.ValidationMessageFor(x => x.PostName)</li>
+            <li>內容: @Html.TextAreaFor(x => x.Comment)</li>
+            <li>
+                @Html.ValidationSummary()
+                <button type="submit">送出</button>
+            </li>
+        </ul>
+    </div>
+}

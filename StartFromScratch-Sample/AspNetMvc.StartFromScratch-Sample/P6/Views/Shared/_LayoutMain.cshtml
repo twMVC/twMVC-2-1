@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutBase.cshtml";
+}
+@section Header{
+    <script src="@Url.Content("~/Scripts/Demo.js")" type="text/javascript">{"AppPath":"@Request.ApplicationPath"}</script>
+    @RenderSection("Header", false)
+}
+@section Title{
+    <div id="logo">
+        <h1><a href="#">@ViewBag.Title</a></h1>
+    </div>
+    <div id="search">
+        <form action="" method="post">
+        <div>
+            <input class="text" name="search" size="32" maxlength="64" /><input class="button"
+                type="submit" value="Search" />
+        </div>
+        </form>
+    </div>
+}
+<div id="banner">
+    <img src="@Url.Content("~/Content/images/pic01.jpg")" width="1180" height="330" alt="" />
+</div>
+<div id="main">   
+    <div id="content">
+        @RenderBody()        
+    </div>
+     <div id="sidebar">
+        
+    </div>
+    <br class="clear" />
+</div>

@@ -1,0 +1,364 @@
+/*
+	Overview by Free Website Templates
+	www.freewebsitetemplat.es
+	Photos by Fotogrph http://fotogrph.com/
+	Released under the Creative Commons Attribution 3.0 License.
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: underline;
+	color: #B23F15;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	font-size: 13pt;
+	line-height: 1.75em;
+	background: #DFE5E7 url(images/bg.jpg);
+	color: #38393A;
+}
+
+body,input {
+	font-family: Jura, sans-serif;
+}
+
+br.clear {
+	clear: both;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4 {
+	text-transform: lowercase;
+	letter-spacing: -1px;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h2,h3,h4 {
+	margin-bottom: 1em;
+	font-family: Georgia, serif;
+	color: #000;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+img.left {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+img.top {
+	margin: 5px 0 20px 0;
+}
+
+label.login {
+	display: block;
+	margin: 0 0 6px 0;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+ul {
+	margin-bottom: 1.5em;
+}
+
+ul h4 {
+	margin-bottom: 0.35em;
+}
+
+.form {
+	margin: 0 0 35px 0;
+}
+
+.inputBox, .inputTextArea {
+	border: dotted 1px #A3A7A9;
+	padding: 5px;
+	width: 95%;
+}
+
+.inputButton {
+	color: #FFF;
+	background: #B23F15;
+	padding: 5px;
+	font-family: Georgia, serif;
+	float: right;
+	border: none;
+}
+
+.readmore a, .comments a {
+	color: #FFF!important;
+	background: #B23F15;
+	padding: 5px;
+	font-family: Georgia, serif;
+	text-decoration: none;
+}
+
+#banner {
+	position: relative;
+	padding: 0;
+	height: 330px;
+	width: 1180px;
+	margin: 0 0 0 0;
+	background: #FFF;
+}
+
+#box1 {
+	width: 740px;
+	overflow: hidden;
+	margin: 0 0 0 0;
+}
+
+#box2 {
+	width: 350px;
+	overflow: hidden;
+	float: left;
+}
+
+#box3 {
+	width: 350px;
+	overflow: hidden;
+	margin: 0 0 0 370px;
+}
+
+#content {
+	width: 740px;
+	float: left;
+	padding: 35px;
+	background: #FFF;
+	color: #5C5C5C;
+}
+
+#content a {
+	color: #1C1C1C;
+}
+
+#content h2, #content h3, #content h4 {
+	color: #0D0D0D;
+}
+
+#copyright {
+	margin: 0 0 0 0;
+	padding: 60px 0 95px 0;
+	text-align: center;
+}
+
+#copyright a {
+	color: #38393A;
+}
+
+#footer {
+	position: relative;
+	padding: 35px;
+	margin: 0 0 0 0;
+	width: 1110px;
+	color: #505253;
+}
+
+#footer a {
+	color: #191919;
+}
+
+#footer h2, #footer h3, #footer h4 {
+	color: #0B0B0C;
+}
+
+#footer ul {
+	list-style: none;
+}
+
+#footer ul li {
+	padding: 10px 0 10px 0;
+	border-top: dotted 1px #A3A7A9;
+}
+
+#footer ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}
+
+#footerContent {
+	width: 740px;
+	float: left;
+}
+
+#footerSidebar {
+	width: 300px;
+	margin: 0 0 0 810px;
+}
+
+#header {
+	position: relative;
+	padding: 35px;
+	height: 105px;
+	width: 1110px;
+}
+
+#logo {
+	position: absolute;
+	bottom: 0;
+	left: 35px;
+	height: 129px;
+	line-height: 129px;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #000;
+}
+
+#logo h1 {
+	font-size: 2.75em;
+	font-family: Georgia, serif;
+}
+
+#main {
+	position: relative;
+	padding: 0;
+	width: 1180px;
+	margin: 0 0 0 0;
+}
+
+#main .sectionList {
+	list-style: none;
+	padding-left: 0;
+}
+
+#main .sectionList li {
+	clear: both;
+	padding: 20px 0 20px 0;
+}
+
+#main ul {
+	list-style: none;
+}
+
+#main ul li {
+	padding: 10px 0 10px 0;
+	border-top: dotted 1px #BABABA;
+}
+
+#main ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}
+
+#nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 35px 0 35px;
+	width: 1110px;
+	height: 46px;
+	line-height: 46px;
+	margin: 0 0 0 0;
+	font-family: Georgia, serif;
+	background: #B23F15;
+}
+
+#nav a {
+	text-decoration: none;
+	text-transform: lowercase;
+	font-size: 1.25em;
+	letter-spacing: -1px;
+	color: #fff;
+}
+
+#nav .active a {
+	color: #000;
+	background: #fff;
+	padding: 10px;
+}
+
+#nav ul {
+	list-style: none;
+}
+
+#nav ul li {
+	display: inline;
+	padding: 0 15px 0 15px;
+}
+
+#nav ul li.first {
+	padding-left: 0;
+}
+
+#outer {
+	position: relative;
+	width: 1180px;
+	margin: 0 auto 0 auto;
+	background: #FFF;
+}
+
+#search {
+	position: absolute;
+	bottom: 0;
+	right: 35px;
+	height: 129px;
+	line-height: 129px;
+}
+
+#search input.button {
+	margin-left: 1em;
+	border: 0;
+	color: #FFF;
+	background: #B23F15;
+	padding: 5px;
+	font-family: Georgia, serif;
+}
+
+#search input.text {
+	border: dotted 1px #A3A7A9;
+	padding: 5px;
+}
+
+#sidebar {
+	width: 300px;
+	margin: 0 0 0 810px;
+	padding: 35px;
+	background: #FFF;
+	color: #5C5C5C;
+}
+
+#sidebar a {
+	color: #1C1C1C;
+}
+
+#sidebar h2, #sidebar h3, #sidebar h4 {
+	color: #000;
+}
+
+#sidebar ul {
+	list-style: none;
+}
+
+#sidebar ul li {
+	padding: 10px 0 10px 0;
+	border-top: dotted 1px #BABABA;
+}
+
+#sidebar ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}

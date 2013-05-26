@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+<div id="box1">
+</div>
+<div id="box2">
+    @*使用RenderAction 會呼叫BlogController的Part Action 來產生View*@
+    @Html.Action("Part", "Blog")
+</div>
+<div id="box3">    
+</div>
+<br class="clear" />

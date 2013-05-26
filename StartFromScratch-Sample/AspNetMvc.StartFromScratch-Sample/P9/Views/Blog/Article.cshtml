@@ -1,0 +1,11 @@
+﻿@model AspNetMvc.StartFromScratch.Models.Blog
+
+@{
+    ViewBag.Title = "Article";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<h2>@this.Model.Title</h2>
+<h2>@Html.Raw(this.Model.Content)</h2>
+@Html.Partial("Comments", this.Model.Comments)
+
